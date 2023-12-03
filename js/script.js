@@ -3,7 +3,7 @@ function newItem() {
     // 1. Adding new item to list
     let list = $('#list');
     let li = $('<li></li>');
-    let inputValue = $('#input');
+    let inputValue = $('#input').val();
     li.append(inputValue);
 
     if (inputValue === '') {
@@ -12,7 +12,12 @@ function newItem() {
     else {
         list.append(li);
     }
-}
+
+    // 2. Cross out item from list
+    li.on('dblclick', function() {
+        li.toggleClass('strike');
+    });
+};
 
 
 
