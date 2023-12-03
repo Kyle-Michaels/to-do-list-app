@@ -44,7 +44,6 @@ ol {
 ol li {
     padding: 5px;
     color: #000000;
-    user-select: none;
 }
 
 ol li:nth-child(even) {
@@ -69,5 +68,4 @@ li > button {
     float: right;
     color: #025f70;
     font-weight: 800;
-    
 }
